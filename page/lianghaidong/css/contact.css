@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*左侧固定栏*/
+.contact{
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    z-index:20000;
+}
+
+.contact .qq{
+    background:#DEDEDE url("../images/qq0.png") no-repeat center;
+    /*background-color: #DEDEDE;*/
+    height: 45px;
+    width: 45px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.contact .qq:hover{
+    background: url("../images/qq.png") no-repeat center;
+}
+.contact .phone{
+    cursor: pointer;
+    background:#DEDEDE url("../images/indexcall2.png") no-repeat -103px;
+    /*background-color: #DEDEDE;*/
+    height: 45px;
+    width: 45px;
+    margin-bottom: 3px;
+}
+.contact .phone:hover{
+    background: url("../images/indexcall1.png") center no-repeat;
+}
+.contact .Top{
+    cursor: pointer;
+    background:#DEDEDE url("../images/returntop0.png") no-repeat center;
+    /*background-color: ;*/
+    height: 45px;
+    width: 45px;
+}
+.contact .Top:hover{
+    background: url("../images/returntop.png") center no-repeat;
+}
+/*鼠标效果*/
+.star{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50% ;
+    pointer-events:none
+}

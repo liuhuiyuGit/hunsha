@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/*主体区域*/
+.box{
+    width: 1200px;
+    height: 600px;
+}
+
+/*中间字体区域*/
+.uu{
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+.uu li{
+    float: left;
+    width: 330px;
+    text-align: center;
+    font-size: 26px;
+    color: #021D2E ;
+}
+.uu .line{
+    height: 3px;
+    width: 370px;
+    background-color: #021D2E;
+    margin-top: 40px;
+}
+/*头部特效区域的样式开始*/
+.container{
+    overflow:hidden;
+    cursor:url(../images/blank.cur),default;
+    position:relative;
+}
+
+.container.googleChrome{
+    cursor: url(../images/blank_google_chrome.cur),default;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+}
+
+.viewFinder{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.blur{
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*头部特效区域的样式结束*/
+
+
+/*第二层内容部分*/
+.content-1 {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.content-1 .hei {
+    background:#000;
+}
+
+.cnt-1-t li {
+    float: left;
+}
+
+
+/*第三层图片区域*/
+.box{
+    height: 510px;
+    background-color: #021D2E;
+    position: relative;
+}
+
+.box .ltop{
+    width: 345px;
+    height: 255px;
+}
+.box .rtop{
+    width: 345px;
+    height: 255px;
+}
+.box .lbottom{
+    width: 345px;
+    height: 255px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.box .rbottom{
+    width: 345px;
+    height: 255px;
+
+}
+
+/*旋转图片区域开始*/
+#slideShowContainer {
+    width: 510px;
+    height: 510px;
+    position: relative;
+}
+
+#slideShow {
+    position: absolute;
+    height: 490px;
+    width: 490px;
+    background-color: #fff;
+    margin: 10px 0 0 10px;
+    z-index: 100;
+    -moz-box-shadow: 0 0 10px #111;
+    -webkit-box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px #111;
+}
+
+#slideShow ul {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#slideShow li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#slideShowContainer > a {
+    border: none;
+    text-decoration: none;
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 36px;
+    height: 37px;
+    background: url('../images/arrows.png') no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+}
+
+#previousLink {
+    position: absolute;
+    left: 0px;
+    top: 255px;
+    z-index: 1000;
+    background-color: darkgreen;
+
+}
+
+#previousLink:hover {
+    background-position: bottom left;
+}
+
+a#nextLink {
+    position: absolute;
+    top: 255px;
+    right: 0px;
+    background-position: top right;
+    z-index: 1000;
+}
+
+#nextLink:hover {
+    background-position: bottom right;
+}
+
+.note {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.credit {
+    font-size: 12px;
+}
+
+.credit a {
+    /*color: #bbb !important;*/
+}
+
+a, a:visited {
+    text-decoration: underline;
+    outline: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+/*旋转图片区域结束*/
+
+/*作品展示开始*/
+.product {
+    height: 400px;
+    overflow: hidden;
+}
+
+.product .productWrap {
+    margin: 0px auto;
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+.productWrap ul {
+    width: 1300px;
+}
+
+.productWrap li {
+    width: 240px;
+    height: 400px;
+    overflow: hidden;
+    display: none;
+    float: left;
+}
+
+.productWrap .lidiv {
+    opacity: 0.2;
+    width: 240px;
+    height: 400px;
+}
+/*作品展示结束*/
+
+
+/*小星星的效果*/
+.star{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50% ;
+    pointer-events:none
+}
+
+/*小火箭*/
+.huojian{
+    width: 150px;
+    height: 195px;
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    display: none;
+}
+.huojian a{
+    display: inline-block;
+    width: 150px;
+    height: 195px;
+    background-image: url(../images/gotop.png);
+}
+.huojian a:hover{
+    background-image: url(../images/gotopd.gif);
+}

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*CSS初始化文件*/
+body, div, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color: #666666;
+}
+a{
+    color:#fff;
+}
+
+.top{
+    width: 100%;
+    height: 720px;
+    background-color: #011d2e;
+    font-size: 0.825em;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+    margin: 0 auto;
+    width: 980px;
+    height: 600px;
+}
+
+.shot {
+    /* These contain a scaled down version of the background image: */
+
+    border: 3px solid #FCFCFC;
+    float: right;
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+
+    /* Adding a CSS3 shadow below the shots: */
+    -moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+}
+
+.shot img {
+    display: block;
+}
+
+.album {
+    /* This div holds the shots */
+    bottom: 50px;
+    height: 110px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    width: 490px;
+}
+
+.album .slide {
+    /* The slide div is contained in album  */
+    width: 700px;
+    height: 110px;
+    position: relative;
+    left: -210px;
+}
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+h1 {
+    background-color: #022f4a;
+    border: 1px solid #011d2e;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 20;
+    color: #fcfcfc;
+}
+
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.tutInfo {
+    /* The tutorial info on the bottom of the page */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: #011D2E;
+    border-top: 1px solid #011d2e;
+    width: 100%;
+}
+
+h1, h2, p.tutInfo {
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    height:0;
+    line-height:0;
+    clear:both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix {
+    zoom:1;
+}

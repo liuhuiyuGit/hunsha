@@ -1,0 +1,595 @@
+@charset "UTF-8";
+/*首页样式------start======*/
+/*整屏滚动样式========start*/
+html{
+    background: #fff;
+    overflow: hidden;
+}
+.ddw {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.ddw2 {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #000;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.num_box {
+    position: relative;
+}
+
+.num {
+    color: #90C;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 667px; /*暂时用的*/
+}
+
+.num .pp {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    text-align: left;
+}
+.num .pp img {
+    display: block;
+}
+.num .pp1 {
+    left: 50px;
+
+}
+.num .app1{
+    padding-top: 20px;
+    font-size: 16px;
+    color:#2f2f2f;
+    text-align: left;
+    margin-bottom: 0;
+}
+.num .app2 {
+    font-size: 12px;
+    color: #8F8F8F;
+    padding: 10px 0 10px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.num .pp2 {
+    right: 50px;
+}
+
+#num_1 {
+    background: #F2F2F2
+}
+
+#num_2 {
+    background: #EC6C84;
+}
+
+#num_3 {
+    background: #f7f7f7;
+}
+
+
+.fixed_r {
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    z-index: 999;
+}
+
+.fixed_r li {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fixed_r li.on {
+    background: #DB403F;
+    color: #fff;
+}
+
+/*整屏滚动样式========end*/
+/*轮播图=================start*/
+.lunbo {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.lunbo ul {
+    position: absolute;
+    width: 50000px;
+    height: 100%;
+}
+
+.lunbo ul li a {
+    display: block;
+}
+
+.lunbo ul li {
+    height: 100%;
+    float: left;
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.lunbo ul li img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+
+}
+
+.lunbo .ollist {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -50px;
+}
+
+.lunbo .ollist span {
+    width: 18px;
+    height: 18px;
+    border: solid #d51514 1px;
+    background: none;
+    margin: 0 10px;
+    position: relative;
+    float: left;
+    display: block;
+    border-radius: 9px;
+    text-indent: -9999px;
+    overflow: hidden;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.lunbo .ollist span.cur {
+    opacity: 1;
+}
+
+.lunbo .ollist span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    background: #d51514;
+    border-radius: 50%;
+}
+
+#arr {
+    display: none;
+}
+
+#arr div {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.7;
+}
+
+#arr div:hover {
+    opacity: 1;
+}
+
+#left {
+    background: url(../images/indexleft.png) no-repeat center center;
+    background-color: rgba(213, 20, 19, 0.8);
+    border-radius: 50%;
+    left: 10%;
+}
+
+#right {
+    background: url(../images/indexright.png) no-repeat center center;
+    background-color: rgba(213, 20, 19, 0.8);
+    border-radius: 50%;
+    right: 10%;
+}
+
+/*轮播图=================end*/
+/* 第二部分======start */
+#num_1 {
+    position: relative;
+}
+
+.suoleuSlide {
+    /*padding-top: 100px;*/
+    width: 790px;
+    position: absolute;
+    overflow: hidden;
+    height: 540px;
+    left: 50%;
+    top: 50%;
+    margin-left: -345px;
+    margin-top: -270px;
+    /*测试代码 */
+}
+
+.newsbox {
+    display: block;
+    width: 188px;
+    height: 58px;
+    padding: 20px 0 0 30px;
+    position: absolute;
+    left: -300px;
+    bottom: 20px;
+    background: rgba(214,32,16,0.9);
+    opacity: 0;
+    text-align: left;
+}
+
+.newsbox h3 {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+
+}
+
+.newsbox p {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.8);
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.slideTop {
+    position: relative;
+    overflow: hidden;
+}
+
+.bigImg {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.bigImg img {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.slideBot {
+    height: 75px;
+    position: relative;
+    padding: 0 50px;
+    margin-top: 10px;
+}
+
+.slideBot .slideL {
+    position: absolute;
+    left: 5px;
+    top: 17px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    width: 40px;
+    background: #DB403F;
+    text-align: center;
+    font-family: Airal;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    color: #fff;
+
+}
+
+.slideBot .slideR {
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    top: 17px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    width: 40px;
+    background: #DB403F;
+    text-align: center;
+    font-family: Airal;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.slideBot .center {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideBot ul {
+    width: 2000px;
+    overflow: hidden;
+    position: absolute;
+    left: -136px;
+    top: 0;
+}
+
+.slideBot ul li {
+    float: left;
+    width: 120px;
+    margin-left: 12px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.slideBot ul li:hover {
+    border: 2px solid red;
+}
+
+.slideBot ul li img {
+    width: 100%;
+    display: block;
+    height: 75px;
+    vertical-align: middle;
+}
+
+/* 第二部分======end */
+
+/* 第三部分======start */
+
+.main2 {
+    padding-top: 60px;
+    /*width: 1000px;*/
+}
+
+/*Tab切换的样式*/
+#tabs_container {
+    padding: 15px 0;
+    /*overflow: auto;*/
+}
+
+#tabs_container div {
+    margin-right: 0;
+}
+
+#tabs {
+    width: 100%;
+    font-size: 14px;
+}
+
+#tabs .topli li, #tabs .topli li a {
+    height: 35px;
+    line-height: 35px;
+}
+
+#tabs .topli li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+
+}
+
+.imgboxs div {
+    top: 15px !important;
+}
+
+.imgboxs ul {
+
+}
+
+.imgboxs .ulbox2 li {
+    width: 179px;
+    height: 230px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 0 !important;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.imgboxs .ulbox2 li img {
+    width: 100%;
+}
+
+.imgboxs img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 2s;
+    -moz-transition: all 2s; /* Firefox 4 */
+    -webkit-transition: all 2s; /* Safari 和 Chrome */
+    -o-transition: all 2s; /* Opera */
+
+}
+
+.imgboxs a:hover img {
+    transform: scale(1.1);
+}
+.ulbox2 li:hover img {
+    transform: scale(1.1);
+}
+.ulbox1 {
+    padding-left: 15px;
+}
+
+.ulbox1 li {
+    float: left;
+    background: none !important;
+    margin-right: 0 !important;
+
+}
+.ulbox1 .rsp{width:100%;height:100%;overflow:hidden;position: absolute;background:#000;top:0px;left:0px;}
+.ulbox1 .text{position:absolute;width:100%;height:100%;left:-300px;top:50%; margin-top: -30px; overflow:hidden;}
+.ulbox1 .text b{width:100%;margin-top:100px;height:50px;line-height:50px;text-align:center;color:#FFFFFF;font-size:20px;}
+.ulbox1 .text a{text-decoration:none}
+.ulbox1 .text span{text-align:center;color:#FFFFFF;font-size:18px;
+    display: block;}
+.ulbox1 li a {
+    display: block;
+    position: relative;
+    padding: 0 !important;
+    background: none !important;
+}
+
+.ulbox1 li.aone {
+    width: 467px;
+    height: 545px;
+    overflow: hidden;
+}
+
+.ulbox1 li.aone img {
+    min-height: 100%;
+}
+
+.ulbox1 li.atwo {
+    width: 400px;
+    overflow: hidden;
+}
+
+.ulbox1 li.atwo img {
+    width: 400px;
+    height:auto;
+    min-height: 100%;
+}
+.ulbox1 li.athree {
+    width: 300px;
+    overflow: hidden;
+}
+
+.ulbox1 li.athree .aa1 {
+    height: 351px;
+    overflow: hidden;
+}
+
+.ulbox1 li.athree .aa1 img {
+    height: 442px;
+}
+
+.ulbox1 li.athree .aa2 {
+    height: 195px;
+    overflow: hidden;
+}
+
+.ulbox1 li.atwo a {
+    width: 400px;
+    height: 273px;
+    display: block;
+    overflow: hidden;
+}
+/*心*/
+.chest {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.postext {
+    position:absolute !important;
+    left: 23px !important;
+    top:66px !important;
+    width: 140px;
+    height:160px;
+    color: #fff;
+    font-size: 12px;
+    z-index:1000;
+    overflow: hidden;
+    font-weight: normal;
+}
+.postext i{
+    display: block;
+    font-style: normal;
+    padding-bottom: 5px;
+}
+.postext a {
+    color: #fff !important;
+    display: inline-block !important;
+    padding: 0 6px !important;
+    font-size: 12px;
+    border: 2px solid darkred !important;
+    background-color: darkred !important;
+    text-decoration: none !important;
+    transition: 0.4s;
+    height:20px !important;
+    line-height:20px !important;
+}
+.postext a:hover{
+    background-color: rgba(255,255,255,0.7) !important;
+    color:darkred !important;
+}
+.chest .heart {
+    position: absolute;
+    z-index: 2;
+    background:rgba(214,32,16,0.9);
+    /*animation: beat 0.7s ease 0s infinite normal;*/
+}
+.chest span {
+    display: block;
+}
+
+.chest .heart.center {
+    background:rgba(214,32,16,0.9);
+}
+
+.chest .heart.top {
+    z-index: 3;
+}
+
+.chest .side {
+    top: 48px;
+    width: 90px;
+    height: 90px;
+    border-radius: 110px;
+}
+
+.chest .center {
+    width: 92px;
+    height: 92px;
+    bottom: 7px;
+    left: 44px;
+    transform: rotateZ(225deg);
+}
+
+.chest .left {
+    left: 10px;
+}
+
+.chest .right {
+    right: 10px;
+}
+
+/* 第三部分======end */
+/* 第四部分======start */
+/* 第四部分======end */
+
+
+
+.marginTop {
+    padding-top: 100px;
+}

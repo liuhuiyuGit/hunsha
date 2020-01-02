@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主题婚纱网</title>
+    <link rel="stylesheet" href="images/css/style.css" />
+    <link rel="stylesheet" href="css/oyhy.css" />
+    <link rel="icon" href="heart.ico" />
+    <link rel="stylesheet" href="css/grid-accordion.css" media="screen"/>
+    <link rel="stylesheet" href="css/grid-accordion-example1.css" media="screen"/>
+    <!--公共base样式表-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css"/>
+    <!--jQuery库js文件引入-->
+    <script src="../../common/js/jquery-1.12.2.js"></script>
+    <!--1====================-->
+    <!--顶部nav导航样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/nav.css"/>
+    <!--顶部nav导航特效-->
+    <script src="../../common/js/nav.js"></script>
+    <!--3===================-->
+    <!--左侧固定栏样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/contact.css"/>
+    <!--左侧固定栏特效js-->
+    <script src="../../common/js/calling.js"></script>
+    <!--2==========================-->
+    <!--底部footer样式-->
+    <link rel="stylesheet" type="text/css" href="../../common/css/footer.css"/>
+    <!--底部footer的js文件-->
+    <script src="../../common/js/friendlink.js"></script>
+    <script>var CSSettings = {"pluginPath":"images"};</script>
+    <script src="images/js/modernizr.min.js"></script>
+    <script src="images/js/cute.slider.js"></script>
+    <script src="images/js/cute.transitions.all.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/tuozhuai.js"></script>
+    <script src="js/jquery.gridAccordion.min.js"></script>
+    <script>
+        $(function () {
+            $(".title_1").mouseover(function () {
+                $(".chest").css("display","block");
+            }).mouseout(function () {
+                $(".chest").css("display","none");
+            });
+            $("#audio_btn").click(function(){ 
+			    var music = document.getElementById("music"); 
+			    if(music.paused){ 
+			        music.play(); 
+			        $("#music_btn").attr("src","images/play.gif"); 
+			    }else{ 
+			        music.pause(); 
+			        $("#music_btn").attr("src","images/pause.gif"); 
+			    } 
+			}); 
+        });
+        $(document).ready(function ($) {
+            $('.accordion').gridAccordion({
+                width: 1200,
+                height: 850,
+                columns: 5,
+                distance: 2,
+                closedPanelWidth: 10,
+                closedPanelHeight: 10,
+                alignType: 'centerCenter',
+                slideshow: true,
+                panelProperties: {
+                    0: {captionWidth: 250, captionHeight: 43.75, captionTop: 37.5, captionLeft: 37.5},
+                    4: {captionWidth: 187.5, captionHeight: 125, captionTop: 37.5, captionLeft: 812.5},
+                    7: {captionWidth: 387.5, captionHeight: 43.75, captionTop: 437.5, captionLeft: 50},
+                    8: {captionWidth: 375, captionHeight: 50, captionTop: 187.5, captionLeft: 43.75},
+                    11: {captionWidth: 187.5, captionHeight: 150, captionTop: 375, captionLeft: 37.5},
+                    14: {captionWidth: 375, captionHeight: 50, captionTop: 37.5, captionLeft: 62.5},
+                    16: {captionWidth: 187.5, captionHeight: 150, captionTop: 187.5, captionLeft: 12.5},
+                    18: {captionWidth: 375, captionHeight: 50, captionTop: 162.5, captionLeft: 62.5}
+                }
+            });
+        });
+    </script>
+    <script>
+        $(window).load(function () {
+            $("#cloud").css("left","330px");
+        });
+    </script>
+</head>
+<body>
+    <!--导航B-->
+    <div class="nav">
+        <div class="w">
+            <div class="nav_logo">
+                <a href="#">主题婚纱网站</a>
+            </div>
+            <!--音乐-->
+			<audio id="music" src="mp3/Skylar Grey - Coming Home.mp3" autoplay="autoplay" loop="loop">你的浏览器不支持audio标签。</audio> 
+			<a style="opacity:0.3;position: absolute;top: 50px;right: 0;"id="audio_btn"><img src="images/play.gif" width="48" height="50" id="music_btn" border="0"></a> 
+            <div class="nav_right" id="nav_right">
+                <span id="cloud" style="left:330px;"></span>
+                <ul class="clearfix">
+                    <li class="cur">
+                        <a href="../index/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../guolin/index.html">另类个性风</a>
+                    </li>
+                    <li>
+                        <a href="../liyaqi/index.html">简约时尚风</a>
+                    </li>
+                    <li>
+                        <a href="index.html">唯美复古风</a>
+                    </li>
+                    <li>
+                        <a href="../dongrihua/index.html">清新自然风</a>
+                    </li>
+                    <li>
+                        <a href="../lianghaidong/index.html">青春童话风</a>
+                    </li>
+                    <li>
+                        <a href="../liuhui/index.html">时尚影像风</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--导航E-->
+    <!--左侧固定栏B-->
+    <div class="contact">
+        <div class="qq"></div>
+        <div class="phone"></div>
+        <div class="Top"></div>
+    </div>
+    <!--左侧固定栏E-->
+    <!--轮播图B-->
+    <div class="c-860 c-demoslider">
+      <div id="cuteslider_3_wrapper" class="cs-circleslight">
+        <div id="cuteslider_3" class="cute-slider" data-width="960" data-height="420" data-overpause="true">
+          <ul data-type="slides">
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img  src="images/001/001.png" data-thumb="images/001/001a.png"><a data-type="link" href="#" ></a> </li>
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img  src="images/bg/blank.png" data-src="images/001/002.JPG" data-thumb="images/001/002a.JPG"><a data-type="link" href="#" ></a> </li>
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr41"><img  src="images/bg/blank.png" data-src="images/001/003.jpg" data-thumb="images/001/003a.jpg"><a data-type="link" href="#" ></a> </li>
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img  src="images/bg/blank.png" data-src="images/001/004.jpg" data-thumb="images/001/004a.jpg"><a data-type="link" href="#" ></a></li>
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img  src="images/bg/blank.png" data-src="images/001/005.png" data-thumb="images/001/005a.png"><a data-type="link" href="#" ></a></li>
+            <li data-delay="5" data-src="5" data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img  src="images/bg/blank.png" data-src="images/001/006.JPG" data-thumb="images/001/006a.JPG"><a data-type="link" href="#" ></a> </li>
+          </ul>
+          <ul data-type="controls">
+            <li data-type="captions"></li>
+            <li data-type="link"></li>
+            <li data-type="video"></li>
+            <li data-type="slideinfo"></li>
+            <li data-type="circletimer"></li>
+            <li data-type="previous"></li>
+            <li data-type="next"> </li>
+            <li data-type="bartimer"></li>
+            <li data-type="slidecontrol" data-thumb="true" data-thumbalign="up"></li>
+          </ul>
+        </div>
+        <div class="cute-shadow"><img src="images/bg/shadow.png" alt="shadow"></div>
+      </div>
+      <script>
+          var cuteslider3 = new Cute.Slider();
+            cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "images/css/slider-style.css");
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START,
+            function(event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END,
+            function(event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.WATING,
+            function(event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE,
+            function(event) {});
+            cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT,
+            function(event) {});
+      </script>
+    </div>
+    <!--轮播图E-->
+    <!--标题栏1B-->
+    <div class="title_1">
+        <div class="chest">
+            <div class="heart left side top"></div>
+            <div class="heart center"></div>
+            <div class="heart right side"></div>
+            <div class="word">奢华浓彩系列</div>
+        </div>
+    </div>
+    <!--标题栏1E-->
+    <!--拖拽B-->
+    <div class="drag_div" id="drag_div">
+        <div class="one">
+            <div class="img_100 margin_bottom_15"><img src="images/wall1.png"/></div>
+        </div>
+        <div class="two">
+            <div class="img_100 margin_bottom_15"><img src="images/wall2.png"/></div>
+        </div>
+        <div class="three">
+            <div class="img_100 margin_bottom_15"><img src="images/wall3.png"/></div>
+        </div>
+        <div class="four">
+            <div class="img_100 margin_bottom_15"><img src="images/wall4.jpg"/></div>
+        </div>
+        <div class="five">
+            <div class="img_100 margin_bottom_15"><img src="images/wall5.JPG"/></div>
+        </div>
+        <div class="six">
+            <div class="img_100 margin_bottom_15"><img src="images/wall6.JPG"/></div>
+        </div>
+        <div class="seven">
+            <div class="img_100 margin_bottom_15"><img src="images/wall7.JPG"/></div>
+        </div>
+        <div class="eight">
+            <div class="img_100 margin_bottom_15"><img src="images/wall8.jpg"/></div>
+        </div>
+        <div class="nine">
+            <div class="img_100 margin_bottom_15"><img src="images/wall9.jpg"/></div>
+        </div>
+        <div class="ten">
+            <div class="img_100 margin_bottom_15"><img src="images/wall10.jpg"/></div>
+        </div>
+    </div>
+    <!--拖拽E-->
+    <!--标题栏2B-->
+    <div class="title_1">
+        <div class="chest">
+            <div class="heart left side top"></div>
+            <div class="heart center"></div>
+            <div class="heart right side"></div>
+            <div class="word">复古黑白系列</div>
+        </div>
+    </div>
+    <!--标题栏2E-->
+    <ul class="accordion">
+        <li><img src="images/image1.jpg" alt=""/></li>
+        <li><img src="images/image2.jpg" alt=""/></li>
+        <li><img src="images/image3.jpg" alt=""/></li>
+        <li><img src="images/image4.jpg" alt=""/></li>
+        <li><img src="images/image5.jpg" alt=""/></li>
+        <li><img src="images/image6.jpg" alt=""/></li>
+        <li><img src="images/image7.jpg" alt=""/></li>
+        <li><img src="images/image8.jpg" alt=""/></li>
+        <li><img src="images/image9.jpg" alt=""/></li>
+        <li><img src="images/image10.jpg" alt=""/></li>
+        <li><img src="images/image11.jpg" alt=""/></li>
+        <li><img src="images/image12.jpg" alt=""/></li>
+        <li><img src="images/image13.jpg" alt=""/></li>
+        <li><img src="images/image14.jpg" alt=""/></li>
+        <li><img src="images/image15.jpg" alt=""/></li>
+        <li><img src="images/image16.jpg" alt=""/></li>
+        <li><img src="images/image17.jpg" alt=""/></li>
+        <li><img src="images/image18.jpg" alt=""/></li>
+        <li><img src="images/image19.jpg" alt=""/></li>
+        <li><img src="images/image20.jpg" alt=""/></li>
+    </ul>
+    <!--底部B-->
+    <div class="foorBox">
+        <div class="servicesBox">
+            <div id="Div35" class="serBox" onclick="serFocus(1)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/3.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/3-3.png"> </div>
+                <div class="txt1"> <span class="tit">开心网</span>
+                    <p>开心网营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">开心网</span>
+                    <p>开心网营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div36" class="serBox" onclick="serFocus(2)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/1.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/1-1.png"> </div>
+                <div class="txt1"> <span class="tit">人人网</span>
+                    <p>人人网营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">人人网</span>
+                    <p>人人网营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div37" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/2.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/2-2.png"> </div>
+                <div class="txt1"> <span class="tit">QQ空间</span>
+                    <p>QQ空间营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">QQ空间</span>
+                    <p>QQ空间营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div38" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/35.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/35-35.png"> </div>
+                <div class="txt1"> <span class="tit">问答营销</span>
+                    <p>问答投放 锁住潜在客户</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">问答营销</span>
+                    <p>问答投放 锁住潜在客户</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div39" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/31.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/31-31.png"> </div>
+                <div class="txt1"> <span class="tit">邮件推广</span>
+                    <p>低成本 商机无限</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">邮件推广</span>
+                    <p>低成本 商机无限</p>
+                </a> </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_botom">
+                <p>
+                    <a href="#">关于我们</a>
+                    <span>|</span>
+                    <a href="#">婚纱摄影服务</a>
+                    <span>|</span>
+                    <a href="#">网站建设</a>
+                    <span>|</span>
+                    <a href="#">诚聘英才</a>
+                    <span>|</span>
+                    <a href="#">友情链接</a>
+                    <span>|</span>
+                    <a href="#">联系方式</a>
+                    <span>|</span>
+                    <a href="#">隐私声明</a>
+                    <span>|</span>
+                    <a href="#">版权声明</a>
+                    <span>|</span>
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                    <a href="#">网站地图</a>
+                </p>
+                <p>版权所有 2000-2012 服务热线：0571-89938887 请与我们联系：Sevrvice@BMlink.com <span>|</span>婚纱网会员互动群：153120106</p>
+                <p>本站网络实名：婚纱网本站通用网址：<span>|</span>主题婚纱网 <span>|</span>浙B2-20060159</p>
+            </div>
+        </div>
+    </div>
+    <!--底部E-->
+</body>
+</html>

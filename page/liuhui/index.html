@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简约时尚风</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="heart.ico" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/index.js"></script>
+
+    <!--顶部nav-->
+    <link rel="stylesheet" href="../../common/css/nav.css">
+    <script src="../../common/js/nav.js"></script>
+    <!--底部footer-->
+    <link rel="stylesheet" href="../../common/css/footer.css">
+    <script src="../../common/js/friendlink.js"></script>
+    <!--左侧固定栏样式-->
+    <link rel="stylesheet" href="../../common/css/contact.css">
+    <script src="../../common/js/calling.js"></script>
+    <!--插件样式-->
+    <link href="css/expander.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/expander.min.js"></script>
+    <script>
+        var index = 0;
+        var timeout = setInterval(function () {
+            if (index > 10) {
+                clearInterval(timeout)
+            }
+            $("article").eq(index).addClass("show");
+            index++
+        }, 300);
+
+        function showFoo() {
+            $("#fooId").trigger("expand");
+        }
+
+        $("#expandSettings").on("click", function () {
+            if ($("ul.settings").hasClass("open")) {
+                $("ul.settings").removeClass("open");
+            } else {
+                $("ul.settings").addClass("open");
+
+            }
+        });
+    </script>
+    <script>
+        $(window).load(function () {
+            $("#cloud").css("left","660px");
+            var ww=$(window).width();
+            var lis = $("#screen>ul").children("li");
+            lis.width(ww);
+            $("#banner").width(ww);
+            $("#screen").width(ww);
+        });
+    </script>
+</head>
+<body style="overflow-x: hidden;">
+<!-- nav导航============start -->
+<div class="nav">
+    <div class="w" style="width:1200px; font-family:'微软雅黑' ">
+        <div class="nav_logo">
+            <a href="#">主题婚纱网站</a>
+        </div>
+        <div class="nav_right" id="nav_right">
+            <span id="cloud"></span>
+            <ul class="clearfix">
+                <li class="cur">
+                    <a href="../index/index.html">首页</a>
+                </li>
+                <li>
+                    <a href="../guolin/index.html">另类个性风</a>
+                </li>
+                <li>
+                    <a href="../liyaqi/index.html">简约时尚风</a>
+                </li>
+                <li>
+                    <a href="../ouyanghengyi/index.html">唯美复古风</a>
+                </li>
+                <li>
+                    <a href="../dongrihua/index.html">清新自然风</a>
+                </li>
+                <li>
+                    <a href="../lianghaidong/index.html">青春童话风</a>
+                </li>
+                <li>
+                    <a href="index.html">时尚影像风</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- nav导航============end -->
+
+<!--左侧固定栏开始-->
+<div class="contact">
+    <div class="qq"></div>
+    <div class="phone"></div>
+    <div class="Top"></div>
+</div>
+
+
+<!--轮播图开始-->
+<!--banner栏-->
+<div class="banner clearfix " id="banner">
+    <div class="screen " id="screen">
+        <ul>
+            <li><img src="images/1_big.jpg"/></li>
+            <li><img src="images/2_big.jpg" /></li>
+            <li><img src="images/3_big.jpg" /></li>
+            <li><img src="images/5_big.jpg" /></li>
+            <li><img src="images/6_big.jpg"/></li>
+        </ul>
+        <!--代替按钮的小图片-->
+        <ol>
+            <li><img src="images/1_small.jpg" height=100 alt=""/></li>
+            <li><img src="images/2_small.jpg" height=100 alt=""/></li>
+            <li><img src="images/3_small.jpg" height=100 alt=""/></li>
+            <li><img src="images/5_small.jpg" height=100 alt=""/></li>
+            <li><img src="images/6_small.jpg" height=100 alt=""/></li>
+        </ol>
+        <div id="arr">
+            <span id="left"> < </span>
+            <span id="right"> > </span>
+        </div>
+    </div>
+</div>
+<!--轮播图结束-->
+
+
+<!--分割线开始-->
+<div class="hr">
+    <i></i><!--中间分隔线-->
+    <a href="#" title="查看更多">
+        <span>用一件婚纱，讲述你的故事！</span>
+    </a></div>
+<!--分割线结束-->
+
+<!--婚纱展示部分开始-->
+<div class="weddingdress_show  " id="weddingdress_show">
+   <div class="ulboxx">
+       <ul>
+           <li>
+               <img src="images/weddingdress1.jpg" width=250 height=380 alt="">
+           </li>
+           <li>
+               <img src="images/weddingdress2.jpg" width=250 height=380 alt="">
+           </li>
+           <li>
+               <img src="images/weddingdress3.jpg" width=250 height=380 alt="">
+           </li>
+           <li>
+               <img src="images/weddingdress4.jpg" width=250 height=380 alt="">
+
+           </li>
+           <li>
+               <img src="images/weddingdress5.jpg" width=250 height=380 alt="">
+           </li>
+           <li>
+               <img src="images/weddingdress6.jpg" width=250 height=380 alt="">
+           </li>
+       </ul>
+   </div>
+</div>
+<!--婚纱展示部分结束-->
+
+
+<!--分割线开始-->
+<div class="hr">
+    <i></i><!--中间分隔线-->
+    <a href="#" title="查看更多">
+        <span>浪漫婚纱 牵手最爱的他</span>
+    </a></div>
+<!--分割线结束-->
+
+<!--婚纱照展示部分开始-->
+<section class="main ">
+    <article>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic1.jpg" data-expander='{animation:"default"}'>
+        </div>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic2.jpg" data-expander='{animation:"diamond"}'>
+
+        </div>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic3.jpg" data-expander='{animation:"turn3d"}'>
+        </div>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic4.jpg" data-expander='{animation:"flip3d"}'>
+        </div>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic5.jpg" data-expander='{animation:"rotate"}'>
+        </div>
+        <div class="imgContainer">
+            <h5>❤</h5>
+            <img src="images/weeddingpic6.jpg" data-expander='{animation:"fade"}'>
+
+        </div>
+    </article>
+</section>
+<!--图片弹出结束-->
+
+
+<!--分割线开始-->
+<div class="hr">
+    <i></i><!--中间分隔线-->
+    <a href="#" title="查看更多">
+        <span>时光可以凝固的如此美好</span>
+    </a></div>
+<!--分割线结束-->
+
+<!--组合部分-->
+<div class="wrap">
+    <div class="wrapper banxin">
+        <!--tab切换栏-->
+        <ul class="tab clearfix ">
+            <li class="active">手风琴</li>
+            <li>高亮显示</li>
+        </ul>
+        <div class="modules ">
+            <!--手风琴部分开始-->
+            <div id="module1" class="module1 hide show">
+                <ul>
+                    <li><img src="images/show1.jpg" width=800 height=420 alt=""></li>
+                    <li><img src="images/show2.jpg" width=800 height=420 alt=""></li>
+                    <li><img src="images/show3.jpg" width=800 height=420 alt=""></li>
+                    <li><img src="images/show4.jpg" width=800 height=420 alt=""></li>
+                    <li><img src="images/show5.jpg" width=800 height=420 alt=""></li>
+                    <li><img src="images/show6.jpg" width=800 height=420 alt=""></li>
+                </ul>
+            </div>
+            <!--手风琴部分结束-->
+
+            <!--高亮显示开始-->
+            <div id="moudle2" class="moudle2 hide">
+                <ul>
+                    <li><img src="images/moudle1.jpg" width=280 height=200 alt=""></li>
+                    <li><img src="images/moudle2.jpg" width=280 height=200 alt=""></li>
+                    <li><img src="images/moudle3.jpg" width=280 height=200 alt=""></li>
+                    <li><img src="images/moudle4.jpg" width=280 height=200 alt=""></li>
+                    <li><img src="images/moudle5.jpg" width=280 height=200 alt=""></li>
+                    <li><img src="images/moudle6.jpg" width=280 height=200 alt=""></li>
+
+                </ul>
+            </div>
+            <!--高亮显示结束-->
+        </div>
+</div>
+
+
+</div>
+
+<!--底部html结构======start-->
+<div class="foorBox">
+    <div class="servicesBox">
+        <div id="Div35" class="serBox" onclick="serFocus(1)">
+            <div class="serBoxOn"></div>
+            <div class="pic1 mypng"> <img src="images/3.png"> </div>
+            <div class="pic2 mypng"> <img src="images/3-3.png"> </div>
+            <div class="txt1"> <span class="tit">开心网</span>
+                <p>开心网营销</p>
+            </div>
+            <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">开心网</span>
+                <p>开心网营销</p>
+            </a> </div>
+        </div>
+        <div class="fgH20"></div>
+        <div id="Div36" class="serBox" onclick="serFocus(2)">
+            <div class="serBoxOn"></div>
+            <div class="pic1 mypng"> <img src="images/1.png"> </div>
+            <div class="pic2 mypng"> <img src="images/1-1.png"> </div>
+            <div class="txt1"> <span class="tit">人人网</span>
+                <p>人人网营销</p>
+            </div>
+            <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">人人网</span>
+                <p>人人网营销</p>
+            </a> </div>
+        </div>
+        <div class="fgH20"></div>
+        <div id="Div37" class="serBox" onclick="serFocus(3)">
+            <div class="serBoxOn"></div>
+            <div class="pic1 mypng"> <img src="images/2.png"> </div>
+            <div class="pic2 mypng"> <img src="images/2-2.png"> </div>
+            <div class="txt1"> <span class="tit">QQ空间</span>
+                <p>QQ空间营销</p>
+            </div>
+            <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">QQ空间</span>
+                <p>QQ空间营销</p>
+            </a> </div>
+        </div>
+        <div class="fgH20"></div>
+        <div id="Div38" class="serBox" onclick="serFocus(3)">
+            <div class="serBoxOn"></div>
+            <div class="pic1 mypng"> <img src="images/35.png"> </div>
+            <div class="pic2 mypng"> <img src="images/35-35.png"> </div>
+            <div class="txt1"> <span class="tit">问答营销</span>
+                <p>问答投放 锁住潜在客户</p>
+            </div>
+            <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">问答营销</span>
+                <p>问答投放 锁住潜在客户</p>
+            </a> </div>
+        </div>
+        <div class="fgH20"></div>
+        <div id="Div39" class="serBox" onclick="serFocus(3)">
+            <div class="serBoxOn"></div>
+            <div class="pic1 mypng"> <img src="images/31.png"> </div>
+            <div class="pic2 mypng"> <img src="images/31-31.png"> </div>
+            <div class="txt1"> <span class="tit">邮件推广</span>
+                <p>低成本 商机无限</p>
+            </div>
+            <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">邮件推广</span>
+                <p>低成本 商机无限</p>
+            </a> </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_botom">
+            <p>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">婚纱摄影服务</a>
+                <span>|</span>
+                <a href="#">网站建设</a>
+                <span>|</span>
+                <a href="#">诚聘英才</a>
+                <span>|</span>
+                <a href="#">友情链接</a>
+                <span>|</span>
+                <a href="#">联系方式</a>
+                <span>|</span>
+                <a href="#">隐私声明</a>
+                <span>|</span>
+                <a href="#">版权声明</a>
+                <span>|</span>
+                <a href="#">帮助中心</a>
+                <span>|</span>
+                <a href="#">网站地图</a>
+            </p>
+            <p>版权所有 2000-2012 服务热线：0571-89938887 请与我们联系：Sevrvice@BMlink.com <span>|</span>婚纱网会员互动群：153120106</p>
+            <p>本站网络实名：婚纱网本站通用网址：<span>|</span>主题婚纱网 <span>|</span>浙B2-20060159</p>
+        </div>
+    </div>
+</div>
+
+<!--底部html结构======end-->
+
+</div>
+</body>
+</html>
+
+
+

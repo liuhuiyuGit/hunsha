@@ -1,0 +1,109 @@
+1.网站名称 ： 主题婚纱网
+2.项目组成员：
+	项目经理：董日华
+	项目其他成员：王翠萍 欧阳恒宜 刘慧 欧阳恒宜 李雅琦 郭林 梁海东
+	项目离线成员：高辉 （返校参加期末考试）
+
+2.项目分工 ：每人进行一个主题分配，高辉同学进行特效搜集（因为提前回家了）
+	
+王翠萍===》海洋之恋风
+
+郭林===》另类个性风
+
+刘慧===》时尚影响风
+
+梁海东===》青春童话风
+
+欧阳恒宜===》唯美复古风
+
+李雅琦===》简约时尚风
+
+董日华===》清新自然
+
+3.模块功能介绍
+	主题logo:自己组设计
+	网页头部 ：鼠标进入事件span标签移动位置（筋斗云）
+	网页尾部 ：遮挡层显示（淡入和淡出效果） 通过改变两个图片的位置更换背景图片和文字
+	
+	海洋之恋风
+		a.图片拍照功能
+			加载随机生成图片（数组随机路径）
+			模拟一个相机（设置一个层让它跟随鼠标进行移动），捕捉图片的各个部分（捕捉的地方透明度），生成相册
+		b.客片大赏
+			通过改变透明度实现当前图片的高亮显示
+		c.唯爱此生
+			通过改变li的层级显示不同的图片，通过设置transform属性（CSS3）
+			rotate(<angle>)： 指定对象的2D rotation（2D旋转），需先有transform-origin属性的定义 
+			rotate(-6.28319rad)
+			兼容性
+			IE6-IE10, Firefox9.0, Chrome16.0, Safari5.1, Opera11.60
+		d.我们的爱情
+			手风琴加强版
+			页面加载时，图片向下滑动显示效果
+			给ul和li分别注册鼠标离开事件
+			当离开li的时候
+			<li style="background-color: rgb(10, 166, 255); display: list-item; width: 240px;">
+                <a href="#">
+                    <div class="lidiv" style="background: url(&quot;images/ima/a (6).jpg&quot;) center center no-repeat; width: 240px; opacity: 0.6;">
+                    </div>
+                </a>
+            </li>
+			$(this).find(".lidiv").stop().animate({"width": "240px", "opacity": 0.6}, 1500);
+			类名为lidiv宽度进行一个缓慢的改变
+			当鼠标指针离开元素时，会发生 mouseleave 事件。该事件大多数时候会与mouseenter 事件一起使用。
+			与 mouseout 事件不同，只有在鼠标指针离开被选元素时，才会触发 mouseleave 事件。
+			如果鼠标指针离开任何子元素，同样会触发 mouseout 事件。
+		返回头部：小火箭 animation(CSS3效果）
+			当scrollTop大于0时，显示小火箭；当点击时，让小伙箭返回网页顶部scrollTop为0
+			
+	另类个性风
+		
+		a.文字跑马灯
+			标签<marquee></marquee> 
+			下面这两个事件经常用到：
+			onMouseOut="this.start()" ：用来设置鼠标移出该区域时继续滚动
+			onMouseOver="this.stop()"：用来设置鼠标移入该区域时停止滚动
+			该标签支持的属性多达11个：
+			align
+			设定<marquee>标签内容的对齐方式
+			absbottom：绝对底部对齐（与g、p等字母的最下端对齐）
+			absmiddle：绝对中央对齐
+			baseline：底线对齐
+			bottom：底部对齐（默认）
+			left：左对齐
+			middle：中间对齐
+			right：右对齐
+			texttop：顶线对齐
+			top：顶部对齐
+		b. 网页头部
+			完整轮播图
+		c.模块标题2D加载
+		transform
+			translateX(<length>)： 指定对象X轴（水平方向）的平移 
+		d.礼物盒
+			上下浮动效果 ：animation(CSS3效果）
+				[ animation-name ]： 检索或设置对象所应用的动画名称 
+				[ animation-duration ]： 检索或设置对象动画的持续时间 
+				[ animation-timing-function ]： 检索或设置对象动画的过渡类型 
+				[ animation-delay ]： 检索或设置对象动画延迟的时间 
+				[ animation-iteration-count ]： 检索或设置对象动画的循环次数 
+				[ animation-direction ]： 检索或设置对象动画在循环中是否反向运动 
+				[ animation-play-state ]： 检索或设置对象动画的状态。w3c正考虑是否将该属性移除，因为动画的状态可以通过其它的方式实现，比如重设样式 
+			当发生滚动时，动态改变线的高度和盒子的位置
+	
+	简约时尚风  
+		轮播图 手风琴 婚纱礼服（动画函数显示遮挡层） 旋转木马 美图展示（改变透明度）
+			
+	唯美复古风
+		改版轮播图（加了css3的特效）
+		标题栏 鼠标进入 显示心形图案
+		相册 可拖拽，当两个div发生碰撞时，调整每个div的位置和大小
+		手风琴改版 
+		自动改变的效果，当x轴效果结束后自动开始Y坐标轴的效果
+		
+	清新自然风：
+		页面总体结构：响应式布局
+		轮播图：小圆圈自己画 css:after 和before的
+		独家外景：标题淡入和淡出 复杂轮播图 点击轮播图放大镜
+		tab菜单栏 div切换翻转效果（transition）
+		

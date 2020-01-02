@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主题婚纱网</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/nav.css"/>
+    <link rel="icon" href="heart.ico" />
+    <!--Tab切换插件的样式-->
+    <link rel="stylesheet" type="text/css" href="css/tabulous.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/contact.css"/>
+    <!--jQuery库文件引用-->
+    <script type="text/javascript" src="../../common/js/jquery-1.7.2.min.js"></script>
+    <!--顶部nav导航特效-->
+    <script src="../../common/js/nav.js"></script>
+    <!--首页轮播切换特效-->
+    <script src="js/lunbo.js"></script>
+    <!--带缩略图，放大镜效果的特效-->
+    <script src="js/suoluetu.js"></script>
+    <!--页面图片展示特效-->
+    <script src="js/imgShow.js"></script>
+    <script>
+        $(window).load(function () {
+            $("#cloud").css("left","440px");
+        });
+    </script>
+</head>
+<body>
+<!-- nav导航============start -->
+<div class="nav">
+    <div class="w">
+        <div class="nav_logo">
+            <a href="#">主题婚纱网站</a>
+        </div>
+        <div class="nav_right" id="nav_right">
+            <span id="cloud" style="left:440px;"></span>
+            <ul class="clearfix">
+                <li class="cur">
+                    <a href="../index/index.html">首页</a>
+                </li>
+                <li>
+                    <a href="../guolin/index.html">另类个性风</a>
+                </li>
+                <li>
+                    <a href="../liyaqi/index.html">简约时尚风</a>
+                </li>
+                <li>
+                    <a href="../ouyanghengyi/index.html">唯美复古风</a>
+                </li>
+                <li>
+                    <a href="index.html">清新自然风</a>
+                </li>
+                <li>
+                    <a href="../lianghaidong/index.html">青春童话风</a>
+                </li>
+                <li>
+                    <a href="../liuhui/index.html">时尚影像风</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- nav导航============end -->
+<div class="fixed_r">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<div class="num_box">
+    <!--第一部分-->
+    <div class="num" id="num_0">
+        <!-- 轮播图 -->
+        <div class="lunbo" id="lunbo">
+            <ul class="clearfix">
+                <li class="item"><a href="#"><img src="images/banner1.jpg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="images/banner2.jpg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="images/banner3.jpg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="images/banner4.jpg" alt=""></a></li>
+                <li class="item"><a href="#"><img src="images/banner1.jpg" alt=""></a></li>
+            </ul>
+            <div class="ollist">
+                <span class="cur">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+
+            </div>
+            <!-- 左右按钮 -->
+            <div id="arr">
+                <div id="left"></div>
+                <div id="right"></div>
+            </div>
+        </div>
+    </div>
+    <!--第二部分-->
+    <div class="num" id="num_1">
+        <div class="pp pp1">
+            <h3><img src="images/waijinh3.png"/></h3>
+            <p class="app1">独家外景</p>
+            <p class="app2">在这里将用新的高度来定格你的爱情</p>
+        </div>
+        <!--带缩略图的轮播图加鼠标进入放大效果-->
+        <div class="suoleuSlide">
+            <div class="slideTop">
+                <div class="newsbox">
+                    <h3>维多利亚的花园</h3>
+                    <p>Secret Garden In Vitoria</p>
+                </div>
+                <img src="images/hunsha/01.jpg" height="450" width="790" id="smallImg" alt="">
+                <!-- 大图 -->
+                <div class="bigImg">
+                    <img src="" alt="" id="bigImg">
+                </div>
+            </div>
+            <!-- 缩略图 -->
+            <div class="slideBot" id="slideBot">
+                <div class="slideL" id="slideL">&lt;</div>
+                <div class="slideR" id="slideR">&gt;</div>
+                <div class="center">
+                    <ul class="clearfix">
+                        <!--需要显示9张图-->
+                        <li><img src="images/hunsha/05.jpg" alt="维多利亚的花园4" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/01.jpg" alt="维多利亚的花园0" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/02.jpg" alt="维多利亚的花园1" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/03.jpg" alt="维多利亚的花园2" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/04.jpg" alt="维多利亚的花园3" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/05.jpg" alt="维多利亚的花园4" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/01.jpg" alt="维多利亚的花园5" title="Secret Garden In Vitoria"></li>
+                        <!--<li><img src="images/slide6_big.jpg" alt=""></li>-->
+                        <li><img src="images/hunsha/02.jpg" alt="维多利亚的花园1" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/03.jpg" alt="维多利亚的花园2" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/04.jpg" alt="维多利亚的花园3" title="Secret Garden In Vitoria"></li>
+                        <li><img src="images/hunsha/05.jpg" alt="维多利亚的花园4" title="Secret Garden In Vitoria"></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--第三部分-->
+    <div class="num" id="num_2">
+        <!--滑出部分-->
+
+        <!--正式内容-->
+        <div class="mian main2 w">
+            <div id="tabs">
+                <ul class="topli">
+                    <li><a href="#tabs-1" title="">全新大片</a></li>
+                    <li><a href="#tabs-2" title="">客户分享</a></li>
+                </ul>
+                <div class="imgboxs" id="tabs_container">
+                    <div id="tabs-1">
+                        <ul class="ulbox1">
+                            <li class="aone">
+                                <a href="#"><img src="images/hunsha/list7.jpg" />
+                                    <p class="rsp"></p>
+                                    <p class="text">
+                                    <b>樱花树婚纱照</b>
+                                    <span>POST TIME :2014.02.21</span>
+                                    </p>
+                                </a>
+
+                            </li>
+
+                            <li class="atwo">
+                                <a href="#">
+                                    <img src="images/hunsha/list2.jpg" />
+                                    <p class="rsp"></p>
+                                    <p class="text">
+
+                                        <b>樱花树婚纱照</b>
+                                        <span>POST TIME :2014.02.21</span>
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/hunsha/list3.jpg" />
+                                    <p class="rsp"></p>
+                                    <p class="text">
+
+                                        <b>樱花树婚纱照</b>
+                                        <span>POST TIME :2014.02.21</span>
+                                    </p>
+                                </a>
+                                <!--<a href="#">-->
+                                    <!--<img src="images/hunsha/list4.jpg" />-->
+                                    <!--<p class="rsp"></p>-->
+                                    <!--<p class="text">-->
+                                        <!--<b>樱花树婚纱照</b>-->
+                                        <!--<span>POST TIME :2014.02.21</span>-->
+                                    <!--</p>-->
+                                <!--</a>-->
+                            </li>
+                            <li class="athree">
+                                <a href="#" class="aa1">
+                                    <img src="images/hunsha/list5.jpg" />
+                                    <p class="rsp"></p>
+                                    <p class="text">
+                                        <b>樱花树婚纱照</b>
+                                        <span>POST TIME :2014.02.21</span>
+                                    </p>
+                                </a>
+                                <a href="#" class="aa2">
+                                    <img src="images/hunsha/list8.jpg" />
+                                    <p class="rsp"></p>
+                                    <p class="text">
+                                        <b>樱花树婚纱照</b>
+                                        <span>POST TIME :2014.02.21</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tabs-2">
+                        <ul class="ulbox2">
+                            <li>
+                                <img src="images/hunsha/011.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/012.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/013.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/014.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/015.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/021.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/022.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/023.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/024.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/025.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/021.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+                            <li>
+                                <img src="images/hunsha/022.jpg" alt="">
+                                <p class="chest">
+                                    <span class="heart left side top"></span>
+                                    <span class="heart center"></span>
+                                    <span class="heart right side"></span>
+
+                                </p>
+                                <b class="postext">
+                                    <i>海洋之心</i>
+                                    <i>我是你的海洋，你是我的心。</i>
+                                    <a href="#">一心一意</a>
+                                </b>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/tabulous.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function($) {
+                $('#tabs').tabulous({
+                    effect: 'flip'
+                });
+            });
+        </script>
+    </div>
+    <!--第四部分-->
+    <div class="num" id="num_3">
+
+        <div class="foorBox marginTop">
+            <div class="servicesBox">
+            <div id="Div35" class="serBox" onclick="serFocus(1)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/3.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/3-3.png"> </div>
+                <div class="txt1"> <span class="tit">开心网</span>
+                    <p>开心网营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">开心网</span>
+                    <p>开心网营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div36" class="serBox" onclick="serFocus(2)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/1.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/1-1.png"> </div>
+                <div class="txt1"> <span class="tit">人人网</span>
+                    <p>人人网营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">人人网</span>
+                    <p>人人网营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div37" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/2.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/2-2.png"> </div>
+                <div class="txt1"> <span class="tit">QQ空间</span>
+                    <p>QQ空间营销</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">QQ空间</span>
+                    <p>QQ空间营销</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div38" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/35.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/35-35.png"> </div>
+                <div class="txt1"> <span class="tit">问答营销</span>
+                    <p>问答投放 锁住潜在客户</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">问答营销</span>
+                    <p>问答投放 锁住潜在客户</p>
+                </a> </div>
+            </div>
+            <div class="fgH20"></div>
+            <div id="Div39" class="serBox" onclick="serFocus(3)">
+                <div class="serBoxOn"></div>
+                <div class="pic1 mypng"> <img src="../../common/images/31.png"> </div>
+                <div class="pic2 mypng"> <img src="../../common/images/31-31.png"> </div>
+                <div class="txt1"> <span class="tit">邮件推广</span>
+                    <p>低成本 商机无限</p>
+                </div>
+                <div class="txt2"> <a href="http://www.lanrenzhijia.com" target="_blank" class="a_jump"><span class="tit">邮件推广</span>
+                    <p>低成本 商机无限</p>
+                </a> </div>
+            </div>
+        </div>
+            <div class="footer">
+                <div class="footer_botom">
+                <p>
+                    <a href="#">关于我们</a>
+                    <span>|</span>
+                    <a href="#">婚纱摄影服务</a>
+                    <span>|</span>
+                    <a href="#">网站建设</a>
+                    <span>|</span>
+                    <a href="#">诚聘英才</a>
+                    <span>|</span>
+                    <a href="#">友情链接</a>
+                    <span>|</span>
+                    <a href="#">联系方式</a>
+                    <span>|</span>
+                    <a href="#">隐私声明</a>
+                    <span>|</span>
+                    <a href="#">版权声明</a>
+                    <span>|</span>
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                    <a href="#">网站地图</a>
+                </p>
+                <p>版权所有 2000-2012 服务热线：0571-89938887 请与我们联系：Sevrvice@BMlink.com <span>|</span>婚纱网会员互动群：153120106</p>
+                <p>本站网络实名：婚纱网本站通用网址：<span>|</span>主题婚纱网 <span>|</span>浙B2-20060159</p>
+            </div>
+            </div>
+        </div>
+
+        <!--footer===结束-->
+    </div>
+
+</div>
+<input type="hidden" value="0" class="ddw"/>
+<input type="hidden" value="0" class="ddw2"/>
+
+<!--左侧固定栏开始-->
+<div class="contact">
+    <div class="qq"></div>
+    <div class="phone"></div>
+    <!--<div class="Top"></div>-->
+</div>
+
+<!--鼠标滚动 全屏切换特效-->
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/scroll.js"></script>
+<!--左侧固定栏特效js-->
+<script src="../../common/js/calling.js"></script>
+<!--友情链接  人人网 QQ空间特效-->
+<script src="../../common/js/friendlink.js"></script>
+</body>
+</html>

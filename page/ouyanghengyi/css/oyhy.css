@@ -1,0 +1,171 @@
+/*标题栏1B*/
+.title_1{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url(../images/1.jpg) no-repeat;
+    border-radius: 8px;
+}
+.title_1 .chest {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: none;
+}
+.title_1 .heart {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+    animation: beat 0.7s ease 0s infinite normal;
+}
+.title_1 .heart.center {
+    background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+}
+.title_1 .heart.top {
+    z-index: 3;
+}
+.title_1 .side {
+    top: 50px;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+}
+.title_1 .center {
+    width: 105px;
+    height: 105px;
+    bottom: 50px;
+    left: 72px;
+    transform: rotateZ(225deg);
+}
+.title_1 .left {
+    left: 31px;
+}
+.title_1 .right {
+    right: 31px;
+}
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(225deg);
+        box-shadow:0 0 40px #d5093c;
+    }
+    50% {
+        transform: scale(1.1) rotate(225deg);
+        box-shadow:0 0 70px #d5093c;
+    }
+    100% {
+        transform: scale(1) rotate(225deg);
+        box-shadow:0 0 40px #d5093c;
+    }
+}
+.title_1 .word{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 110px;
+    left: 71px;
+    z-index: 4;
+}
+/*标题栏1E*/
+/*拖拽B*/
+.img_100 img{
+    width: 100%;
+    max-width: 100%;
+}
+.drag_div{
+    width: 1200px;
+    height: 760px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.drag_div>div{
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.drag_div>div.one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.two{
+    position: absolute;
+    top: 260px;
+    left: 0;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.three{
+    position: absolute;
+    top: 520px;
+    left: 0;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.four{
+    position: absolute;
+    top: 0px;
+    left: 19%;
+    width: 43%;
+    height: 759px;
+}
+.drag_div>div.five{
+    position: absolute;
+    top: 0px;
+    left: 63%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.six{
+    position: absolute;
+    top: 260px;
+    left: 63%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.seven{
+    position: absolute;
+    top: 520px;
+    left: 63%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.eight{
+    position: absolute;
+    top: 0px;
+    left: 82%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.nine{
+    position: absolute;
+    top: 260px;
+    left: 82%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.ten{
+    position: absolute;
+    top: 520px;
+    left: 82%;
+    width: 18%;
+    height: 240px;
+}
+.drag_div>div.one img,.drag_div>div.two img,.drag_div>div.three img,.drag_div>div.five img,.drag_div>div.six img,.drag_div>div.seven img,.drag_div>div.eight img,.drag_div>div.nine img,.drag_div>div.ten img{
+    width: 192px;
+    height: 215px;
+}
+.drag_div>div.four img {
+    width: 494px;
+    height: 735px;
+}
+/*拖拽E*/

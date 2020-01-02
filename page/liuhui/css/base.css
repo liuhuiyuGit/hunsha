@@ -1,0 +1,55 @@
+
+@charset "UTF-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+    color:#999;
+    font-size: 12px ;
+    font-family: "微软雅黑";
+    list-style: none;
+}
+body{
+    background: black;
+}
+a {
+    text-decoration: none;
+    color:#999;
+}
+a:hover {
+    color: #EF2C7F;
+}
+i,s {
+    font-style: normal;
+    text-decoration: none;/*去掉s的删除线*/
+
+}
+input,img{
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;/*底线对齐*/
+    outline-style:none ;/*去掉轮廓线*/
+    border:0 none;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    height:0;
+    line-height:0;
+    display: block;
+    clear:both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}
+/*版心*/
+.banxin{
+    width:1220px;
+    margin:0 auto;
+}
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}

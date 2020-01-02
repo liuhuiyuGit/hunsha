@@ -1,0 +1,150 @@
+@charset "UTF-8";
+.foorBox {
+    background: #f7f7f7;
+}
+/*友情链接开始*/
+.servicesBox a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.servicesBox {
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+    clear: both;
+    line-height: 18px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.servicesBox .serBox {
+    cursor: pointer;
+    border: 1px solid #fff;
+    display: inline;
+    width: 238px;
+    height: 236px;
+    float: left;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.servicesBox .serBoxOn {
+    font-family: "Microsoft Yahei";
+    display: none;
+    width: 320px;
+    height: 270px;
+    background: #666;
+    /*background: url(http://demo.lanrenzhijia.com/2014/pic0910/images/serboxon_bg.gif) repeat 0px 0px;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 19;
+}
+
+.servicesBox .serBox .pic1 {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    position: absolute;
+    top: 22px;
+    right: 64px;
+    z-index: 99;
+}
+
+.servicesBox .serBox .pic2 {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    position: absolute;
+    top: 22px;
+    left: -110px;
+    z-index: 99;
+}
+
+.servicesBox .serBox .txt1 {
+    width: 198px;
+    height: 100px;
+    color: #999999;
+    position: absolute;
+    top: 145px;
+    left: 20px;
+    z-index: 99;
+}
+
+.servicesBox .serBox .txt2 {
+    width: 198px;
+    height: 100px;
+    color: #a9cf4f;
+    position: absolute;
+    top: 145px;
+    right: -240px;
+    z-index: 99;
+}
+
+.servicesBox .serBox span.tit {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.servicesBox .serBox .txt1 .tit {
+    color: #000000;
+    line-height: 30px;
+}
+
+.servicesBox .serBox .txt2 .tit {
+    color: #fff;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+}
+
+.servicesBox .serBox p {
+    padding: 0 10px;
+    text-align: center;
+}
+
+/*友情链接节结束*/
+/* footer 底部 */
+.footer {
+    font-size: 12px;
+    padding-top: 28px;
+    background: #f7f7f7;
+    width: 100%;
+    border-top:1px solid #DEDEDE;
+}
+.footer_top {
+    padding-bottom: 20px;
+}
+.footer_top dt {
+    width: 70px;
+    text-align: right;
+    color: #999999;
+}
+.footer_top dd {
+    margin-left: 70px;
+    margin-top: -18px;
+}
+.footer_top dd a {
+    color: #666666;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer_botom {
+    padding-bottom: 20px;
+}
+.footer_botom p {
+    text-align: center;
+    padding-top: 15px;
+    color: #000;
+    margin-bottom: 0;
+}
+.footer_botom p span {
+    padding: 0 10px;
+    color: #CCC;
+    display: inline-block;
+}

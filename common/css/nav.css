@@ -1,0 +1,59 @@
+@charset"UTF-8";
+/* 首页公共nav导航样式==========start*/
+.nav{
+	height: 54px;
+	line-height: 54px;
+	width: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	z-index: 10000;
+	font-family: "微软雅黑" !important;
+}
+.nav a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+
+}
+.nav .nav_logo {
+	float: left;
+}
+.nav .nav_logo a {
+	display: block;
+	height: 54px;
+	width: 184px;
+	background: url("../images/logo.png") no-repeat center;
+	background-size: auto 45px;
+	text-indent: -99999px;
+}
+.nav .nav_right{
+	float: right;
+	position: relative;
+}
+.nav .nav_right ul {
+	height: 52px;
+}
+.nav .nav_right li{
+	float: left;
+	width: 110px;
+	text-align: center;
+	font-size: 15px;
+}
+.nav .nav_right li a {
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+.nav .nav_right #cloud{
+	position: absolute;
+	display: block;
+	width: 90px;
+	height: 3px;
+	background: #D51413;
+	left: 0;
+	bottom: 0;
+	margin: 0 10px;
+}
+/* 首页公共nav导航样式==========end*/

@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+body {
+    background-color: #eee;
+}
+
+/*气泡*/
+
+/*.mouseDiv {*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*opacity: 1;*/
+    /*border-radius: 5px;*/
+    /*position: absolute;*/
+/*}*/
+
+
+/*礼物*/
+.giftBox {
+    position: absolute;
+    height: 0px;
+    top: 54px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.sp_gift {
+    position: absolute;
+    z-index: 99;
+    width: 2px;
+    height: 250px;
+    left: 49px;
+    background-color: #a98251;
+}
+@keyframes gift{
+    100%{
+        transform:translateY(30px);
+    }
+}
+.a_giftBox {
+    position: absolute;
+    width: 100px;
+    z-index: 999;
+    top: 200px;
+    animation: gift .6s .1ms linear infinite alternate;
+}
+
+.a_giftBox img{
+    width: 100%;
+}
+
+/*头部*/
+.header {
+	width: 100%;
+}
+
+.header .banner{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+/*轮播*/
+
+.all {
+    position: relative;
+}
+
+.screen {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 500%;
+}
+
+.screen ul li {
+    width: 25%;
+    overflow: hidden;
+    display: none;
+}
+
+.screen ul li img {
+    width: 100%;
+    height: 600px;
+}
+
+.all ol {
+    position: absolute;
+    width: 130px;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #f5f5f5;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: #fff;
+    border: 3px solid #ccc;
+}
+
+#arr {
+    /*display: none;*/
+    width: 100%;
+}
+
+#arr span {
+    display: block;
+    width: 34px;
+    height: 80px;
+    top: 50%;
+    margin-top: -40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#arr #left {
+    left: 20px;
+    background-image: url("../images/left.png");
+}
+
+#arr #right {
+    right: 20px;
+    background-image: url("../images/right.png");
+}
+
+.pmd {
+    position: absolute;
+    z-index: 10;
+    bottom: 120px;
+    left: 0px;
+    color: pink;
+    font-size:30px;
+    text-shadow: 2px 0 2px #8B4513, 0 2px 2px #8B4513, 0 -2px 2px #8B4513, -2px 0 2px #8B4513;
+}
+
+
+/*主体*/
+
+/*奇思妙想*/
+.qsmx {
+
+}
+
+.top_title {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.top_title span {
+    width: 400px;
+    height: 2px;
+    background-color: #cccccc;
+    margin-top: 35px;
+}
+
+.sp_left {
+    float: left;
+}
+.sp_right {
+    float: right;
+}
+
+.title_center {
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+@font-face { font-family: 'mnjkt'; src:url(mnjkt.TTF);}
+
+.title_center h3 {
+    width: 100%;
+    height: 36px;
+    font-family: "mnjkt";
+    font-size: 36px;
+    line-height: 36px;
+    color: #A98251;
+    margin-bottom: 10px;
+    transform:translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;	/* Firefox 4 */
+    -webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+    -o-transition: all 0.5s;	/* Opera */
+}
+
+.title_center p {
+    width: 100%;
+    height: 24px;
+    font-family: "mnjkt";
+    font-size:24px;
+    line-height: 24px;
+    color: #A98251;
+    transform:translateX(100%);
+    opacity: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;	/* Firefox 4 */
+    -webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+    -o-transition: all 0.5s;	/* Opera */
+}
+
+.qsmx_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.qsmx_center {
+    float: left;
+}
+
+.qsmx_right {
+    float: right;
+}
+
+.qsmx_content li {
+    position: relative;
+    width: 393px;
+    height: 262px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.qsmx_content .big_li {
+    height: 534px;
+}
+
+.qsmx_content img {
+    width: 393px;
+    vertical-align: middle;
+    transition: all 2s;
+    -moz-transition: all 2s;	/* Firefox 4 */
+    -webkit-transition: all 2s;	/* Safari 和 Chrome */
+    -o-transition: all 2s;	/* Opera */
+
+}
+
+.qsmx_content li:hover img{
+    transform: scale(1.1);
+}
+
+.qsmx_content li:hover p{
+    height: 35px;
+
+}
+
+.qsmx_content li p {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    transition: all 1s;
+    -moz-transition: all 1s;	/* Firefox 4 */
+    -webkit-transition: all 1s;	/* Safari 和 Chrome */
+    -o-transition: all 1s;	/* Opera */
+    background-color: rgba(94,174,211,0.4);
+    line-height: 35px;
+}
+
+
+/*高端定制*/
+.gddz {
+
+}
+
+.gddz_content {
+    float: left;
+    width: 100%;
+}
+
+.bigImg {
+    float: left;
+    width: 100%;
+}
+
+.bigImg img {
+    width: 100%;
+}
+
+
+.btn_img {
+    float: left;
+    width: 1215px;
+    margin-top: -30px;
+}
+
+.btn_img a {
+    float: left;
+    width: 390px;
+    height: 80px;
+    background: url(../images/bck2.png) no-repeat bottom center;
+    margin-right: 15px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.btn_img .current {
+    background: url(../images/bck1.png) no-repeat bottom center;
+
+}
+
+
+/*天马行空*/
+.sxsy {
+
+}
+
+.sxsy_content {
+    float: left;
+    width: 100%;
+}
+
+.sxsy_content ul {
+    float: left;
+    width: 1210px;
+    margin-right: -10px;
+}
+
+.sxsy_content li {
+    float: left;
+    width: 393px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.sxsy_content img {
+    float: left;
+    width: 100%;
+    height: 265px;
+}
+
+.sxsy_content .mask {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 265px;
+    background-color: rgba(0,0,0,0.5);
+}
+.sxsy_text {
+    position: absolute;
+    z-index: 3;
+    width: 129px;
+    height: 129px;
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+    background: url(../images/sxsy_bck1.png) no-repeat center;
+}
+
+.sxsy_text span {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 33px;
+    color: white;
+}
+
+.sxsy_text p {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 15px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
